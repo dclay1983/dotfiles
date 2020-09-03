@@ -43,10 +43,6 @@ xterm*|rxvt*)
     ;;
 esac
 
-# Enable asdf to manage various programming runtime versions.
-#   Requires: https://asdf-vm.com/#/
-source "$HOME"/.asdf/asdf.sh
-
 # Enable a better reverse search experience.
 #   Requires: https://github.com/junegunn/fzf (to use fzf in general)
 #   Requires: https://github.com/BurntSushi/ripgrep (for using rg below)
@@ -59,3 +55,7 @@ export FZF_DEFAULT_OPTS="--color=dark"
     # Requires: https://sourceforge.net/projects/vcxsrv/ (or alternative)
 #    export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0.0
 #fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
