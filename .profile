@@ -8,6 +8,7 @@ export PATH="$PATH:$HOME/.local/bin"
 export EDITOR="vim"
 export READER="zathura"
 export FILE="ranger"
+export GPG_TTY=$(tty)
 
 # Add colors to the less and man commands.
 export LESS=-R
